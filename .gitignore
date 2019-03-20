@@ -1,0 +1,17 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+  
+### IntelliJ IDEA ###
+.idea
+*.log
+*.gz
+
+log_tomcat/
+
+demo\.iml
+
+mvnw
+
+mvnw\.cmd
+
+socketio-demo\.iml
