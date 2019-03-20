@@ -1,4 +1,4 @@
-package com.github.missthee.socketio;
+package com.github.missthee.socketio.config;
 
 import com.corundumstudio.socketio.SocketIOServer;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,7 +6,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-//SocketIOServer启动类，启动socket服务
+//SocketIOServer启动类，让springboot启动socket服务
 @Component
 @Order(value = 1)
 public class MyCommandLineRunner implements CommandLineRunner {

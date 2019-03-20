@@ -1,4 +1,4 @@
-package com.github.missthee.socketio;
+package com.github.missthee.socketio.config;
 
 import com.corundumstudio.socketio.SocketIOServer;
 import com.corundumstudio.socketio.annotation.SpringAnnotationScanner;
