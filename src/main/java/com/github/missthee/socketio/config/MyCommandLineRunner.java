@@ -6,7 +6,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-//SocketIOServer启动类
+//SocketIOServer启动类，启动socket服务
 @Component
 @Order(value = 1)
 public class MyCommandLineRunner implements CommandLineRunner {

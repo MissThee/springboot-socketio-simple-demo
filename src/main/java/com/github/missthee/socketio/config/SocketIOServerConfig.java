@@ -26,9 +26,11 @@ public class SocketIOServerConfig {
     @Bean
     public SocketIOServer socketIOServer() {
         com.corundumstudio.socketio.Configuration config = new com.corundumstudio.socketio.Configuration();
-        config.setHostname(hostname);
-        config.setPort(port);
-        config.setAuthorizationListener(data -> {//身份验证，修改为自己安全框架的验证，此处只验证id是否为空
+        config.setHostname(hostname);//服务端host
+        config.setPort(port);//服务端端口号
+        //身份验证，修改为自己安全框架的验证，此处只验证id是否为空。
+        //若不需要验证，直接删除即可
+        config.setAuthorizationListener(data -> {
             String userId = data.getSingleUrlParam("id");
             return !StringUtils.isEmpty(userId);
         });
