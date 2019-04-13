@@ -33,7 +33,8 @@ src
 ```
 
 ### 测试方式：  
-1. application.properties中server.port修改为空闲端口号，或自行配置springboot停用内置tomcat
+1. application.properties中server.port修改为任意空闲端口号（此端口不是socket使用的端口，而是为了让springboot无端口冲突，启动起来），或自行配置springboot停用内置tomcat
 2. 运行服务端
-3. 使用chrome浏览器打开html/socketio-test.html。  
-  输入正确的后台地址。输入用户id  0到9。连接，测试。
+3. 使用chrome浏览器打开项目目录html/socketio-test.html文件。  
+  输入正确的后台地址，端口号。输入用户id （0到9任意）。连接，测试。
+注：本项目，单个用户可在多个客户端登录，同时接收消息
